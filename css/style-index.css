@@ -1,0 +1,152 @@
+/* Global styles */
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Navbar styles */
+  
+  .navbar {
+    padding: 1.5rem 0;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .bi-shop {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    color: white;
+  }
+  
+  /* Home page styles */
+  
+  .women-section, .men-section {
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content {
+    text-align: center;
+    color: #100f0f;
+  }
+  
+  .font-style1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .font-style2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-primary {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
+    background-color: #F44336;
+    border-color: #F44336;
+  }
+  
+  .btn-primary:hover {
+    background-color: #F44336;
+    border-color: #F44336;
+  }
+  
+  /* Footer styles */
+  
+  
+  
+  .footer {
+    width: 100%;
+    
+    background-color: #343a40;
+    color: #fff;
+    
+  }
+
+
+  
+  
+  .footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer a {
+    color: #fff;
+  }
+  
+  .footer .social-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer .social-links a {
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    color: #fff;
+  }
+  
+  .footer .social-links a:hover {
+    color: #F44336;
+  }
+  
+  @media (max-width: 767px) {
+    .font-style1 {
+      font-size: 1.5rem;
+    }
+  
+    .font-style2 {
+      font-size: 2rem;
+    }
+}
+  
+  .shop-all {
+    display: flex;
+   
+  }  
+  

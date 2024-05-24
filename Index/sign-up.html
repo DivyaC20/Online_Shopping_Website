@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Account</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style_login.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <style>
+  	.navbar-brand {
+  		font-size: 1.5rem;
+  	}
+  	
+  	#error-messages {
+  		margin-top: 10px;
+  	}
+  </style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <i class="bi bi-shop">
+      <a class="navbar-brand  font-style1 ms-3" href="index.php">Online Clothing Shop</a></i>
+    </div>
+  </nav>
+	<main class="container mt-5">
+		<form id="create-account-form" action="#" method="post">
+			<div class="form-group">
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username" class="form-control" required>
+			</div>
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" class="form-control" required>
+			</div>
+			<div class="form-group">
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" class="form-control" required>
+			</div>
+			<div class="form-group">
+				<label for="confirm_password">Confirm Password:</label>
+				<input type="password" id="confirm_password" name="confirm_password" class="form-control" required>
+			</div>
+			<div id="error-messages" style="display:none;" class="d-grid gap-2 d-md-flex justify-content-md-end"></div>
+			<div class="d-grid gap-1 d-md-flex justify-content-md-end">
+				<button type="submit" class="btn btn-secondary btn-sm">Create Account</button>&nbsp;&nbsp;
+				<button type="button" class="btn btn-secondary btn-sm" onclick="goBack()">Back</button>
+			</div>
+		</form>
+	</main>
+</body>
+</html>
+	
+	<!-- jQuery and Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script>
+		$(function() {
+			// form validation using jQuery
+			$('#create-account-form').submit(function(event) {
+				event.preventDefault();
+				var username = $('#username').val();
+				var email = $('#email').val();
+				var password = $('#password').val();
+				var confirm_password = $('#confirm_password').val();
+
+				// check if password and confirm password match
+				if (password != confirm_password) {
+					$('#error-messages').html('Passwords do not match.').show();
+					return;
+				}
+
+				// check if username is valid (at least 3 characters long)
+				if (username.length < 3) {
+					$('#error-messages').html('Username must be at least 3 characters long.').show();
+					return;
+				}
+
+				// check if email is valid (contains '@' and '.')
+				if (email.indexOf('@') == -1 || email.indexOf('.') == -1) {
+					$('#error-messages').html('Email is not valid.').show();
+					return;
+				}
+
+				// form is valid, submit the form
+				alert('Account created successfully! Click Ok to go back to login page');
+				window.location.href = 'index.html';
+			});
+		});
+
+		function goBack() {
+  window.history.back();
+}
+	</script>
+</body>
+</html>
+
+<br><br><br>
+<footer class="bg-dark text-light py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="mb-0">Copyright © 2023 Online Clothing Shop. All rights reserved.</p>
+      </div>
+      <div class="col-md-6">
+		<ul class="list-inline float-end">
+			<li class="list-inline-item"><a href="/contact_us/about_us.html">About</a></li>
+			<li class="list-inline-item"><a href="/contact_us/contactus.html">Contact</a></li>
+		  </ul>
+		  
+      </div>
+    </div>
+  </div>
+</footer>

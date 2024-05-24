@@ -1,0 +1,84 @@
+.card {
+    height: 100%;
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .card {
+    margin: 20px;
+  }
+  
+  .card-img-top {
+    height: 400px;
+    object-fit: contain;
+    
+  }
+
+  .divClass{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18.5em;
+    height: 20em;
+  }
+  .col-md-4 {
+    margin-bottom: 20px;
+  }
+  
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .card-text {
+    margin-bottom: 1rem;
+  }
+  
+  .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #dc3545;
+    margin-bottom: 0;
+  }
+  
+  .input-group-append button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .input-group-append button:hover {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .input-group-append button:focus {
+    box-shadow: none;
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .input-group-append button:active {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  @media (min-width: 768px) {
+    .card {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .card-body {
+      flex: 1 1 auto;
+    }
+  }
+
+  .bi-shop {
+    font-size: 2em; /* Change the font size as needed */
+    color: white; /* Set the color to white */
+  }
+  
